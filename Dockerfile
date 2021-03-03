@@ -1,4 +1,3 @@
 FROM cm2network/steamcmd
 
-RUN steamcmd +login anonymous +force_install_dir /home/steam/Valheim +app_update 896660 +quit
-
+RUN /home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/steam/Valheim +app_update 896660 +quit
